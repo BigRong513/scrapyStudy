@@ -11,7 +11,7 @@ from scrapy.exceptions import DropItem
 from scrapy import Request
 
 class JandanPicPipeline(ImagesPipeline):
-    def file_path(selfself, request, response=None, info=None):
+    def file_path(self, request, response=None, info=None):
         item = request.meta.get('item')
         index = request.meta.get('index')
         #print(request.url)
